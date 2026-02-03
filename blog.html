@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>IT Company Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>IT Company Updates</h1>
+        <button onclick="logout()">Logout</button>
+    </header>
+
+    <section class="post-box">
+        <input id="title" placeholder="Company Name">
+        <textarea id="content" placeholder="Selection / Hiring / Layoffs info"></textarea>
+        <button onclick="addPost()">Post</button>
+    </section>
+
+    <section id="posts"></section>
+
+    <script src="js/firebase.js" type="module"></script>
+    <script src="js/blog.js" type="module"></script>
+
+</body>
+
+</html>
